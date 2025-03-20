@@ -22,17 +22,18 @@ def sum_times(t1, t2):
     sum.second = t1.second + t2.second
 
     if sum.second == 60:
-        sum.minute = sum.minute + 1
-    if sum.second > 60:
-        sum.minute = sum.second // 60
+         sum.minute = sum.minute + 1
+    elif sum.second > 60:
+        sum.hour = sum.second // 60
         sum.second = sum.second % 60
 
     if sum.minute == 60:
         sum.hour = sum.hour + 1
     if sum.minute > 60:
-        sum.hour = sum.minute // 60
+        sum.hour = sum.hour + sum.minute // 60
         sum.minute = sum.minute % 60
         
+
     return sum
 
 def valid_time(t):
