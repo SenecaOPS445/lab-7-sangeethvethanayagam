@@ -24,6 +24,7 @@ class Time:
     
     def __add__(self, t2):
         """return the result by using sum_times() method"""
+        return self.sum_times(t2)
     
     def format_time(self):
         """Return time object (t) as a formatted string"""
