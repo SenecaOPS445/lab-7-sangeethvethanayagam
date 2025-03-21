@@ -22,6 +22,9 @@ class Time:
         '''just instead of ':', you are required use the '.'  in the formatting string.'''
         return f'{self.hour:02d}.{self.minute:02d}.{self.second:02d}'
     
+    def __add__(self, t2):
+        """return the result by using sum_times() method"""
+    
     def format_time(self):
         """Return time object (t) as a formatted string"""
         return f'{self.hour:02d}:{self.minute:02d}:{self.second:02d}'
