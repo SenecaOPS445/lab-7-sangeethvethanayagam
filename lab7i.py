@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # Student ID: SVETHANAYAGAM3
 def function1():
+    global schoolName
     schoolName = 'SICT'
     print('print() in function1 on schoolName:',schoolName)
 
 def function2():
-    schoolName
+    global schoolName
     schoolName = 'SSDO'
     print('print() in function2 on schoolName:',schoolName)
 
